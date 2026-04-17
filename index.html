@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empire Dental Care | Family Dentistry with a Gentle Touch</title>
+    <title>Empire Dental Care | Cheranallur, Kochi</title>
     <meta
       name="description"
-      content="A polished sample website concept for Empire Dental Care in Webster, NY, featuring family dentistry, cosmetic care, implants, and easy appointment calls to action."
+      content="Empire Dental Care in Cheranallur, Kochi. Personalized dental care, modern facilities, popular procedures, gallery, location, and contact information."
     />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Marcellus&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -20,20 +20,10 @@
   </head>
   <body>
     <div class="site-shell">
-      <header class="topbar">
-        <div class="container topbar__inner">
-          <p>Empire Dental Care, Webster NY</p>
-          <div class="topbar__actions">
-            <a href="tel:5856711650">(585) 671-1650</a>
-            <a href="mailto:info@empiredentalcare.com">info@empiredentalcare.com</a>
-          </div>
-        </div>
-      </header>
-
-      <header class="header">
+      <header class="header" id="home">
         <div class="container header__inner">
           <a class="brand" href="#home" aria-label="Empire Dental Care home">
-            <img src="assets/edc-logo.svg" alt="Empire Dental Care logo" />
+            <img src="assets/shaik/logobg.png" alt="Empire Dental Care logo" />
           </a>
 
           <button
@@ -50,65 +40,42 @@
 
           <nav class="nav" id="site-nav" aria-label="Primary navigation">
             <a href="#home">Home</a>
+            <a href="#about">About Us</a>
             <a href="#services">Services</a>
-            <a href="#about">About</a>
             <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-            <a class="button button--small" href="https://empiredentalcare.com/" target="_blank" rel="noreferrer">
-              Visit Live Site
-            </a>
+            <a href="#contact">Contact Us</a>
+            <a class="button button--nav" href="tel:9048343768">Make an Appointment</a>
           </nav>
         </div>
       </header>
 
       <main>
-        <section class="hero" id="home" aria-label="Hero">
+        <section class="hero" aria-label="Hero slider">
           <div class="hero__slides" aria-hidden="true">
             <article
               class="hero-slide is-active"
-              style="--slide-image: url('assets/empire-dental-care.jpg')"
+              style="--slide-image: url('assets/shaik/COVER-3.jpg')"
             ></article>
             <article
               class="hero-slide"
-              style="--slide-image: url('assets/edc-office2.jpg')"
+              style="--slide-image: url('assets/shaik/COVER-1.jpg')"
             ></article>
             <article
               class="hero-slide"
-              style="--slide-image: url('assets/woman-smiling.jpg')"
+              style="--slide-image: url('assets/shaik/COVER-2-2.jpg')"
             ></article>
           </div>
 
           <div class="container hero__content">
             <div class="hero__copy">
-              <span class="eyebrow">Sample concept for Empire Dental Care</span>
-              <h1>Family dentistry that feels calm, modern, and genuinely personal.</h1>
-              <p>
-                A fresh one-page website inspired by the reference layout, tailored for
-                Empire Dental Care in Webster with a welcoming tone, strong calls to
-                action, and client-specific business details.
+              <p class="eyebrow">Empire Dental Care</p>
+              <h1>Personalized dental care with a warm, modern touch.</h1>
+              <p class="hero__lead">
+                A premium clinic website concept inspired by your screenshots, now
+                personalized for Empire Dental Care in Cheranallur, Kochi.
               </p>
-              <div class="hero__cta">
-                <a class="button" href="tel:5856711650">Call to Book</a>
-                <a class="button button--ghost" href="#services">Explore Services</a>
-              </div>
-              <ul class="hero__highlights" aria-label="Practice highlights">
-                <li>Gentle family dentistry</li>
-                <li>Cosmetic and restorative care</li>
-                <li>Convenient Webster location</li>
-              </ul>
+              <a class="button button--hero" href="tel:9048343768">Make an Appointment</a>
             </div>
-
-            <aside class="hero__panel">
-              <div class="hero__panel-card">
-                <p class="mini-label">Now welcoming</p>
-                <h2>Families, cosmetic cases, and same-week urgent visits</h2>
-                <p>
-                  Built to feel reassuring at first glance, with clear pathways for new
-                  patients, emergencies, and smile-makeover services.
-                </p>
-                <a href="#contact">See contact details</a>
-              </div>
-            </aside>
           </div>
 
           <div class="hero__dots" aria-label="Hero slides">
@@ -118,307 +85,235 @@
           </div>
         </section>
 
-        <section class="info-strip">
-          <div class="container info-strip__grid">
-            <article class="info-card info-card--deep">
-              <p class="mini-label">Emergency cases</p>
-              <h3>Fast help when something hurts</h3>
-              <p>Tooth pain, broken restorations, and urgent dental concerns.</p>
-              <a href="tel:5856711650">(585) 671-1650</a>
+        <section class="intro-strip">
+          <div class="container intro-strip__grid">
+            <article class="intro-card intro-card--dark">
+              <h2>Emergency Cases</h2>
+              <p>Fast response for urgent dental concerns and sudden pain.</p>
+              <a href="tel:9048343768">090483 43768</a>
             </article>
 
-            <article class="info-card info-card--soft">
-              <p class="mini-label">Office hours</p>
-              <h3>Designed for weekday convenience</h3>
+            <article class="intro-card intro-card--mid">
+              <h2>Opening Hours</h2>
               <ul>
-                <li>Monday to Friday: 8:00 AM to 5:00 PM</li>
-                <li>Saturday and Sunday: Closed</li>
+                <li><span>Mon - Sat</span><span>9:30 AM - 7:00 PM</span></li>
+                <li><span>Sunday</span><span>Closed</span></li>
               </ul>
             </article>
 
-            <article class="info-card info-card--accent">
-              <p class="mini-label">Location</p>
-              <h3>Spring Pines Office Park</h3>
-              <p>1674 Empire Blvd, Suite 400, Webster, NY 14580</p>
-              <a href="#contact">Get directions</a>
+            <article class="intro-card intro-card--gold">
+              <h2>Do You Want to Make an Appointment</h2>
+              <a class="button button--card" href="tel:9048343768">Make an Appointment</a>
             </article>
+          </div>
+        </section>
+
+        <section class="section about" id="about">
+          <div class="about__media">
+            <img src="assets/shaik/logobg.png" alt="Empire Dental Care gold logo" />
+          </div>
+          <div class="about__content">
+            <p class="eyebrow">About Empire Dental Care</p>
+            <h2>Dental care with a personal touch</h2>
+            <p class="section-copy">
+              Empire Dental Care focuses on personalized treatment for each patient.
+              The layout and mood here follow the black-and-gold clinic style from
+              your references while keeping the content specific to the Cheranallur
+              location.
+            </p>
+
+            <div class="feature-list">
+              <article class="feature-item">
+                <div class="feature-item__check">✓</div>
+                <div>
+                  <h3>Well Experienced Team</h3>
+                  <p>
+                    Thoughtful consultations, patient-first communication, and a
+                    reassuring clinic atmosphere for families and individuals alike.
+                  </p>
+                </div>
+              </article>
+
+              <article class="feature-item">
+                <div class="feature-item__check">✓</div>
+                <div>
+                  <h3>High Technology Facilities</h3>
+                  <p>
+                    A clean, modern presentation that supports advanced dental care,
+                    clear diagnosis, and a more confidence-inspiring first impression.
+                  </p>
+                </div>
+              </article>
+
+              <article class="feature-item">
+                <div class="feature-item__check">✓</div>
+                <div>
+                  <h3>Comfortable Clinic Experience</h3>
+                  <p>
+                    Warm visuals, polished spacing, and real clinic imagery create a
+                    friendlier and more trustworthy digital presence.
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
         <section class="section services" id="services">
           <div class="container">
             <div class="section-heading">
-              <span class="eyebrow">Services</span>
-              <h2>Built around the care families ask for most</h2>
-              <p>
-                The structure follows the reference site: easy scanning, visual service
-                blocks, and clear next steps. The content below is written as polished
-                sample copy for Empire Dental Care.
+              <p class="eyebrow">Popular Procedures</p>
+              <h2>Our service keeps you smiling</h2>
+              <p class="section-copy">
+                These cards mirror the style and spacing from your screenshots while
+                presenting services in a simple, clinic-friendly format.
               </p>
             </div>
 
-            <div class="services__grid">
-              <article class="service-card service-card--image">
-                <img src="assets/general-dentistry.jpg" alt="General preventative dentistry" loading="lazy" />
-                <div>
-                  <span class="mini-label">Preventive</span>
-                  <h3>Checkups and cleanings</h3>
-                  <p>
-                    Routine exams, digital imaging, and preventive planning that help
-                    patients stay ahead of bigger dental issues.
-                  </p>
-                </div>
+            <div class="service-grid">
+              <article class="service-card">
+                <img src="assets/general-dentistry.jpg" alt="General dentistry" loading="lazy" />
+                <h3>General Dentistry</h3>
+                <p>
+                  Routine care, consultations, and preventive support designed to
+                  maintain long-term oral health.
+                </p>
               </article>
 
-              <article class="service-card service-card--image">
+              <article class="service-card">
                 <img src="assets/cosmetic-dentistry.jpg" alt="Cosmetic dentistry" loading="lazy" />
-                <div>
-                  <span class="mini-label">Cosmetic</span>
-                  <h3>Smile refresh treatments</h3>
-                  <p>
-                    Whitening, bonding, and aesthetic smile improvements presented in a
-                    more approachable and confidence-building way.
-                  </p>
-                </div>
+                <h3>Cosmetic Dentistry</h3>
+                <p>
+                  Smile-focused treatments that improve appearance while keeping the
+                  experience calm and approachable.
+                </p>
               </article>
 
-              <article class="service-card service-card--image">
+              <article class="service-card">
                 <img src="assets/dental-implants.jpg" alt="Dental implants" loading="lazy" />
-                <div>
-                  <span class="mini-label">Restorative</span>
-                  <h3>Implants, crowns, and bridges</h3>
-                  <p>
-                    Restorative options that focus on comfort, function, and a natural
-                    finished look for long-term confidence.
-                  </p>
-                </div>
-              </article>
-
-              <article class="service-card">
-                <div class="service-card__icon">
-                  <svg viewBox="0 0 64 64" aria-hidden="true">
-                    <path d="M32 8c8 0 14 6 14 14v7c0 9-5 16-14 27C23 45 18 38 18 29v-7c0-8 6-14 14-14Z" />
-                    <path d="M26 25h12M32 19v12" />
-                  </svg>
-                </div>
-                <span class="mini-label">Urgent care</span>
-                <h3>Emergency dentistry</h3>
+                <h3>Dental Implants</h3>
                 <p>
-                  For chipped teeth, sudden discomfort, or treatment that should not
-                  wait until next week.
-                </p>
-              </article>
-
-              <article class="service-card">
-                <div class="service-card__icon">
-                  <svg viewBox="0 0 64 64" aria-hidden="true">
-                    <path d="M20 14c0 7 4 14 12 14s12-7 12-14" />
-                    <path d="M16 22c0 18 6 34 16 34s16-16 16-34" />
-                    <path d="M24 41c3 3 13 3 16 0" />
-                  </svg>
-                </div>
-                <span class="mini-label">Comfort focused</span>
-                <h3>Gentle family care</h3>
-                <p>
-                  Clear explanations, a reassuring tone, and a layout that makes the
-                  practice feel welcoming before patients even arrive.
-                </p>
-              </article>
-
-              <article class="service-card">
-                <div class="service-card__icon">
-                  <svg viewBox="0 0 64 64" aria-hidden="true">
-                    <path d="M14 48c8-18 28-18 36 0" />
-                    <path d="M18 22c0-6 6-10 14-10s14 4 14 10-6 12-14 12-14-6-14-12Z" />
-                    <path d="M24 23h16" />
-                  </svg>
-                </div>
-                <span class="mini-label">Patient experience</span>
-                <h3>Clear treatment guidance</h3>
-                <p>
-                  Sample messaging that highlights consultation, education, and a calm
-                  treatment plan rather than just a list of procedures.
+                  Restorative solutions that support comfort, confidence, and natural
+                  function for missing teeth.
                 </p>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section about" id="about">
-          <div class="container about__grid">
-            <div class="about__media">
-              <img src="assets/dentist-22.jpg" alt="Empire Dental Care team portrait" loading="lazy" />
-              <div class="about__badge">
-                <strong>Webster, NY</strong>
-                <span>Family and cosmetic dentistry</span>
-              </div>
+        <section class="section procedures">
+          <div class="container">
+            <div class="section-heading section-heading--dark">
+              <p class="eyebrow">Specialties</p>
+              <h2>Popular procedures</h2>
+              <p class="section-copy">
+                A gold-toned section inspired directly by the screenshot style you
+                shared, simplified for a cleaner modern feel.
+              </p>
             </div>
 
-            <div class="about__copy">
-              <span class="eyebrow">About the concept</span>
-              <h2>A warmer, more premium version of the classic local dentist homepage</h2>
-              <p>
-                This sample keeps the trusted rhythm of the reference site, but elevates
-                the visuals with softer luxury tones, stronger spacing, better hierarchy,
-                and a more client-ready first impression.
-              </p>
-              <div class="about__points">
-                <article>
-                  <h3>Reference-inspired</h3>
-                  <p>Hero slider, service-led layout, trust-building sections, and direct appointment CTAs.</p>
-                </article>
-                <article>
-                  <h3>Client-specific</h3>
-                  <p>Empire Dental Care branding, Webster contact details, and public business imagery.</p>
-                </article>
-                <article>
-                  <h3>Responsive design</h3>
-                  <p>Mobile navigation, stacked content blocks, and simpler touch targets for phone users.</p>
-                </article>
-              </div>
+            <div class="procedure-grid">
+              <article class="procedure-card">
+                <img src="assets/shaik/gallery-photo-09.png" alt="Orthodontic consultation room" loading="lazy" />
+                <h3>Orthodontics</h3>
+                <p>
+                  Correction of alignment issues with treatment planning that keeps
+                  function, comfort, and aesthetics in balance.
+                </p>
+              </article>
+
+              <article class="procedure-card">
+                <img src="assets/shaik/gallery-photo-11.png" alt="Pediatric friendly clinic environment" loading="lazy" />
+                <h3>Pedodontics</h3>
+                <p>
+                  A welcoming environment for young patients with careful, supportive
+                  care for growing smiles.
+                </p>
+              </article>
+
+              <article class="procedure-card">
+                <img src="assets/shaik/gallery-photo-04.png" alt="Conservative dentistry setup" loading="lazy" />
+                <h3>Conservative Dentistry</h3>
+                <p>
+                  Preservation-focused care aimed at restoring damaged teeth while
+                  maintaining strength and natural structure.
+                </p>
+              </article>
             </div>
           </div>
         </section>
 
         <section class="section gallery" id="gallery">
           <div class="container">
-            <div class="section-heading section-heading--split">
-              <div>
-                <span class="eyebrow">Visual direction</span>
-                <h2>Bright spaces, friendly faces, and smile-forward imagery</h2>
-              </div>
-              <p>
-                Since the Google Maps share link is protected behind CAPTCHA, this mockup
-                uses public Empire Dental Care imagery as the closest reliable stand-in.
-              </p>
-            </div>
-
-            <div class="gallery__grid">
-              <figure class="gallery__item gallery__item--tall">
-                <img src="assets/edc-office2.jpg" alt="Empire Dental Care office" loading="lazy" />
-              </figure>
-              <figure class="gallery__item">
-                <img src="assets/woman-smiling.jpg" alt="Smiling dental patient" loading="lazy" />
-              </figure>
-              <figure class="gallery__item">
-                <img src="assets/general-dentistry.jpg" alt="Dental treatment room" loading="lazy" />
-              </figure>
-            </div>
-          </div>
-        </section>
-
-        <section class="section testimonials">
-          <div class="container">
             <div class="section-heading">
-              <span class="eyebrow">Trust builders</span>
-              <h2>The kind of reassurance patients want before they ever call</h2>
+              <p class="eyebrow">Clinic Gallery</p>
+              <h2>Real clinic imagery in the same mood as your reference</h2>
+              <p class="section-copy">
+                These images follow the Google Maps and website gallery feel you shared:
+                reception, waiting area, consultation spaces, treatment rooms, and
+                branded interiors.
+              </p>
             </div>
 
-            <div class="testimonials__grid">
-              <article class="testimonial">
-                <p>
-                  “The office feels clean, welcoming, and organized. It gives new patients
-                  immediate confidence.”
-                </p>
-                <strong>Sample review tone</strong>
-              </article>
-              <article class="testimonial">
-                <p>
-                  “A gentle team, clear explanations, and a better overall experience than
-                  a typical clinic website communicates.”
-                </p>
-                <strong>Sample review tone</strong>
-              </article>
-              <article class="testimonial">
-                <p>
-                  “The service mix makes it easy to see that Empire handles both everyday
-                  care and bigger smile goals.”
-                </p>
-                <strong>Sample review tone</strong>
-              </article>
+            <div class="gallery-grid">
+              <img src="assets/shaik/gallery-photo-01.png" alt="Reception area" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-02.png" alt="Front desk and hallway" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-03.png" alt="Consultation desk" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-04.png" alt="Treatment room" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-05.png" alt="Clinic logo wall" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-06.png" alt="Clinic exterior signage" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-08.png" alt="Dentist working at desk" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-10.png" alt="Dentist portrait at desk" loading="lazy" />
+              <img src="assets/shaik/gallery-photo-12.png" alt="Waiting lounge" loading="lazy" />
             </div>
           </div>
         </section>
 
-        <section class="section cta-band">
-          <div class="container cta-band__inner">
-            <div>
-              <span class="eyebrow">Next step</span>
-              <h2>Ready to turn this into the final client website?</h2>
-              <p>
-                The layout is already positioned as a strong sample. We can swap in exact
-                Google Maps photos, refine the copy, and connect a real appointment form.
-              </p>
-            </div>
-            <div class="cta-band__actions">
-              <a class="button" href="https://empiredentalcare.com/" target="_blank" rel="noreferrer">
-                Review Client Info
-              </a>
-              <a class="button button--ghost-dark" href="#contact">Open Contact Section</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="section contact" id="contact">
-          <div class="container contact__grid">
-            <div class="contact__copy">
-              <span class="eyebrow">Contact</span>
-              <h2>Empire Dental Care</h2>
-              <p>
-                Spring Pines Office Park<br />
-                1674 Empire Blvd, Suite 400<br />
-                Webster, NY 14580
-              </p>
-
-              <div class="contact__list">
-                <a href="tel:5856711650">(585) 671-1650</a>
-                <a href="mailto:info@empiredentalcare.com">info@empiredentalcare.com</a>
-                <a href="https://empiredentalcare.com/" target="_blank" rel="noreferrer">
-                  empiredentalcare.com
-                </a>
-              </div>
-
-              <div class="contact__hours">
-                <h3>Office hours</h3>
-                <ul>
-                  <li>Mon: 8am to 5pm</li>
-                  <li>Tue: 8am to 5pm</li>
-                  <li>Wed: 8am to 5pm</li>
-                  <li>Thu: 8am to 5pm</li>
-                  <li>Fri: 8am to 5pm</li>
-                  <li>Sat and Sun: Closed</li>
-                </ul>
-              </div>
-
-              <div class="contact__buttons">
-                <a class="button" href="tel:5856711650">Call the office</a>
-                <a class="button button--ghost" href="mailto:info@empiredentalcare.com">
-                  Send email
-                </a>
-              </div>
-            </div>
-
-            <div class="contact__map-wrap">
-              <div class="contact__card">
-                <span class="mini-label">Map preview</span>
-                <h3>Convenient Empire Boulevard location</h3>
-                <p>Embed added so the sample still carries a real local presence.</p>
-              </div>
-              <iframe
-                title="Empire Dental Care map"
-                src="https://www.google.com/maps?q=1674%20Empire%20Blvd%20Suite%20400%20Webster%20NY%2014580&output=embed"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
+        <section class="map-section">
+          <iframe
+            title="Empire Dental Care location map"
+            src="https://www.google.com/maps?q=3rd%20floor,%20p%20o,%20zera%20tower,%20Cheranallur,%20Kochi,%20Kerala%20682034&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="container footer__inner">
+      <footer class="footer" id="contact">
+        <div class="container footer__top">
+          <div class="footer__brand">
+            <img src="assets/shaik/logobg.png" alt="Empire Dental Care footer logo" />
+          </div>
+
+          <div class="footer__column">
+            <div class="footer__icon">⌖</div>
+            <h3>Office</h3>
+            <p>
+              Empire Dental Care<br />
+              3rd floor, p o, zera tower,<br />
+              Cheranallur, Kochi, Kerala 682034
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <div class="footer__icon">✉</div>
+            <h3>Contact</h3>
+            <p><a href="tel:9048343768">090483 43768</a></p>
+            <p><a href="tel:+919048343768">+91 90483 43768</a></p>
+          </div>
+
+          <div class="footer__column">
+            <div class="footer__icon">◷</div>
+            <h3>Hours</h3>
+            <p>Monday - Saturday</p>
+            <p>9:30 AM - 7:00 PM</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="container footer__bottom">
           <p>Empire Dental Care sample website concept</p>
-          <p>Built as a clean, responsive reference inspired by the provided dentist website.</p>
+          <p>Cheranallur, Kochi, Kerala</p>
         </div>
       </footer>
     </div>
