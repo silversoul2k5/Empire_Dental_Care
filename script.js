@@ -71,26 +71,3 @@ document.addEventListener("visibilitychange", () => {
 
 setSlide(0);
 startAutoplay();
-
-const animatedElements = Array.from(document.querySelectorAll("[data-animate]"));
-
-if ("IntersectionObserver" in window) {
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.16,
-      rootMargin: "0px 0px -70px 0px",
-    }
-  );
-
-  animatedElements.forEach((element) => revealObserver.observe(element));
-} else {
-  animatedElements.forEach((element) => element.classList.add("is-visible"));
-}

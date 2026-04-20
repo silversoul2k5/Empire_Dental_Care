@@ -77,7 +77,6 @@ ul {
   z-index: 30;
   background: rgba(9, 9, 9, 0.96);
   border-bottom: 1px solid var(--light-line);
-  animation: headerDrop 700ms ease both;
 }
 
 .header__inner {
@@ -109,7 +108,6 @@ ul {
   font-family: "Marcellus", serif;
   font-size: 1.15rem;
   letter-spacing: 0.08em;
-  transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .brand-text {
@@ -117,12 +115,6 @@ ul {
   font-size: 1.05rem;
   letter-spacing: 0.2em;
   line-height: 1.2;
-}
-
-.brand:hover .brand-mark,
-.footer__brand:hover .brand-mark {
-  transform: rotate(-5deg) scale(1.04);
-  box-shadow: 0 0 28px rgba(229, 193, 125, 0.22);
 }
 
 .nav {
@@ -147,14 +139,13 @@ ul {
   background: var(--gold);
   color: white;
   font-weight: 600;
-  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  transition: transform 180ms ease, background 180ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
   transform: translateY(-1px);
   background: #c49c55;
-  box-shadow: 0 15px 35px rgba(184, 147, 79, 0.28);
 }
 
 .button--nav {
@@ -235,7 +226,6 @@ ul {
   max-width: 660px;
   text-align: center;
   margin-inline: auto;
-  animation: heroRise 900ms 180ms ease both;
 }
 
 .hero__copy h1 {
@@ -286,12 +276,6 @@ ul {
 
 .intro-card {
   padding: 34px 38px;
-  transition: transform 260ms ease, filter 260ms ease;
-}
-
-.intro-card:hover {
-  transform: translateY(-8px);
-  filter: brightness(1.04);
 }
 
 .intro-card h2 {
@@ -370,12 +354,6 @@ ul {
   aspect-ratio: 1.15 / 0.82;
   object-fit: cover;
   box-shadow: var(--shadow);
-  transition: transform 500ms ease, filter 500ms ease;
-}
-
-.about__media:hover img {
-  transform: scale(1.025);
-  filter: saturate(1.05);
 }
 
 .about__content {
@@ -449,14 +427,6 @@ ul {
   background: white;
   box-shadow: var(--shadow);
   text-align: center;
-  overflow: hidden;
-  transition: transform 260ms ease, box-shadow 260ms ease;
-}
-
-.service-card:hover,
-.procedure-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.16);
 }
 
 .service-card {
@@ -469,13 +439,6 @@ ul {
   aspect-ratio: 1 / 0.72;
   object-fit: cover;
   margin-bottom: 18px;
-  transition: transform 600ms ease;
-}
-
-.service-card:hover img,
-.procedure-card:hover img,
-.gallery-grid img:hover {
-  transform: scale(1.05);
 }
 
 .service-card h3,
@@ -506,7 +469,6 @@ ul {
   margin: 0 auto 20px;
   object-fit: cover;
   border-radius: 50%;
-  transition: transform 500ms ease;
 }
 
 .gallery {
@@ -523,11 +485,6 @@ ul {
   width: 100%;
   height: 290px;
   object-fit: cover;
-  transition: transform 500ms ease, filter 500ms ease;
-}
-
-.gallery-grid {
-  overflow: hidden;
 }
 
 .map-section {
@@ -541,91 +498,6 @@ ul {
   border: 0;
   display: block;
   filter: grayscale(0.15) contrast(0.98);
-}
-
-[data-animate] {
-  opacity: 0;
-  transform: translateY(36px);
-  transition: opacity 800ms ease, transform 800ms ease;
-}
-
-[data-animate="fade-left"] {
-  transform: translateX(44px);
-}
-
-[data-animate="fade-right"] {
-  transform: translateX(-44px);
-}
-
-[data-animate="hero"] {
-  transform: translateY(20px) scale(0.98);
-}
-
-[data-animate].is-visible {
-  opacity: 1;
-  transform: translate3d(0, 0, 0) scale(1);
-}
-
-[data-animate].is-visible .intro-card,
-[data-animate].is-visible .service-card,
-[data-animate].is-visible .procedure-card,
-[data-animate].is-visible .gallery-grid img,
-[data-animate].is-visible + .feature-list .feature-item {
-  animation: softPop 700ms ease both;
-}
-
-.intro-card:nth-child(2),
-.service-card:nth-child(2),
-.procedure-card:nth-child(2),
-.gallery-grid img:nth-child(2),
-.gallery-grid img:nth-child(5),
-.gallery-grid img:nth-child(8) {
-  animation-delay: 90ms;
-}
-
-.intro-card:nth-child(3),
-.service-card:nth-child(3),
-.procedure-card:nth-child(3),
-.gallery-grid img:nth-child(3),
-.gallery-grid img:nth-child(6),
-.gallery-grid img:nth-child(9) {
-  animation-delay: 180ms;
-}
-
-@keyframes headerDrop {
-  from {
-    opacity: 0;
-    transform: translateY(-18px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes heroRise {
-  from {
-    opacity: 0;
-    transform: translateY(26px) scale(0.98);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes softPop {
-  from {
-    opacity: 0;
-    transform: translateY(22px) scale(0.98);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 .footer {
@@ -760,21 +632,5 @@ ul {
 
   .gallery-grid img {
     height: 240px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-  }
-
-  [data-animate] {
-    opacity: 1;
-    transform: none;
   }
 }
