@@ -87,8 +87,34 @@ ul {
   min-height: 104px;
 }
 
-.brand {
-  width: 206px;
+.brand,
+.footer__brand {
+  display: inline-grid;
+  gap: 5px;
+  color: var(--gold-soft);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.brand-mark {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold-soft);
+  font-family: "Marcellus", serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+}
+
+.brand-text {
+  font-family: "Marcellus", serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
 }
 
 .nav {
@@ -262,17 +288,6 @@ ul {
   margin: 0;
 }
 
-.intro-card ul {
-  display: grid;
-  gap: 14px;
-}
-
-.intro-card li {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-}
-
 .intro-card--dark {
   background: #9a7a44;
   color: white;
@@ -291,7 +306,6 @@ ul {
   justify-content: center;
 }
 
-.intro-card--dark a,
 .intro-card--gold a {
   margin-top: 16px;
 }
@@ -337,6 +351,9 @@ ul {
 
 .about__media img {
   width: min(100%, 720px);
+  aspect-ratio: 1.15 / 0.82;
+  object-fit: cover;
+  box-shadow: var(--shadow);
 }
 
 .about__content {
@@ -375,168 +392,7 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.18);
   transform: rotate(45deg);
   font-size: 1.6rem;
-}
-
-.feature-item__check::before {
-  content: attr(data-icon);
-}
-
-.feature-item__check {
   color: white;
-}
-
-.feature-item__check {
-  line-height: 1;
-}
-
-.feature-item__check {
-  font-family: "Jost", sans-serif;
-}
-
-.feature-item__check {
-  padding-bottom: 3px;
-}
-
-.feature-item__check {
-  justify-self: center;
-}
-
-.feature-item__check {
-  align-self: center;
-}
-
-.feature-item__check {
-  overflow: hidden;
-}
-
-.feature-item__check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-item__check {
-  transform: rotate(45deg);
-}
-
-.feature-item__check {
-  border-radius: 2px;
-}
-
-.feature-item__check {
-  font-weight: 500;
-}
-
-.feature-item__check {
-  color: white;
-}
-
-.feature-item__check {
-  position: relative;
-}
-
-.feature-item__check {
-  background: transparent;
-}
-
-.feature-item__check {
-  box-sizing: border-box;
-}
-
-.feature-item__check {
-  margin-top: 12px;
-}
-
-.feature-item__check {
-  font-size: 1.45rem;
-}
-
-.feature-item__check {
-  transform-origin: center;
-}
-
-.feature-item__check {
-  rotate: 45deg;
-}
-
-.feature-item__check {
-  text-indent: 1px;
-}
-
-.feature-item__check {
-  letter-spacing: -0.02em;
-}
-
-.feature-item__check {
-  content: none;
-}
-
-.feature-item__check {
-  user-select: none;
-}
-
-.feature-item__check {
-  cursor: default;
-}
-
-.feature-item__check {
-  aspect-ratio: 1;
-}
-
-.feature-item__check {
-  margin-left: 4px;
-}
-
-.feature-item__check {
-  padding-left: 1px;
-}
-
-.feature-item__check {
-  transform: rotate(45deg);
-}
-
-.feature-item__check {
-  font-size: 1.7rem;
-}
-
-.feature-item__check {
-  color: white;
-}
-
-.feature-item__check {
-  font-weight: 400;
-}
-
-.feature-item__check {
-  line-height: 60px;
-}
-
-.feature-item__check {
-  text-align: center;
-}
-
-.feature-item__check {
-  display: block;
-}
-
-.feature-item__check {
-  padding: 0;
-}
-
-.feature-item__check {
-  place-items: unset;
-}
-
-.feature-item__check {
-  display: grid;
-  place-items: center;
-}
-
-.feature-item__check {
-  transform: rotate(45deg);
-}
-
-.feature-item__check {
   position: relative;
 }
 
@@ -631,13 +487,6 @@ ul {
   object-fit: cover;
 }
 
-.map-section iframe {
-  width: 100%;
-  height: 470px;
-  border: 0;
-  display: block;
-}
-
 .footer {
   background: #1f1f1f;
   color: #ddd3bf;
@@ -645,20 +494,10 @@ ul {
 
 .footer__top {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: 28px;
-  align-items: start;
+  align-items: center;
   padding: 64px 0 34px;
-}
-
-.footer__brand img {
-  width: min(100%, 260px);
-}
-
-.footer__icon {
-  margin-bottom: 12px;
-  color: var(--gold-soft);
-  font-size: 2.1rem;
 }
 
 .footer__column h3 {
@@ -696,8 +535,7 @@ ul {
     min-height: auto;
   }
 
-  .intro-card--gold,
-  .footer__brand {
+  .intro-card--gold {
     grid-column: 1 / -1;
   }
 }
